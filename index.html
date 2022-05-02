@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/normalize.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>Kanban</title>
+</head>
+
+<body>
+    <div class="blackout" id="blackout"></div>
+    <div class="container">
+        <table class="table" id="table">
+            <thead class="thead" id="thead">
+                <tr class="thead__tr" id="thead__tr">
+                    <td class="thead__td" id="thead__td">first column</td>
+                </tr>
+            </thead>
+            <tbody class="tbody" id="tbody">
+                <tr class="tbody__tr" id="tbody__tr">
+                    <td class="tbody__td" id="tbody__td"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="append">
+            <thead class="append__thead">
+                <tr class="append__thead-tr" id="append__thead-tr">
+                    <td class="append__thead-td plus">
+                        +
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="append__tbody">
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="" class="form">
+            <label for="name">
+                Название
+            </label>
+            <input type="text" name="name" id="1" class="form__name-card">
+            <label for="desc">
+                Описание
+            </label>
+            <textarea name="desc" id="2" cols="10" rows="5" class="form__desc-card"></textarea>
+            <label for="color">
+                Цвет
+            </label>
+            <select name="color" id="3" class="form__color-card">
+                <option value="yellow">Жёлтый</option>
+                <option value="green">Зелёный</option>
+                <option value="blue">Синий</option>
+                <option value="red">Красный</option>
+                <option value="purple">Фиолетовый</option>
+                <option value="grey">Серый</option>
+                <option value="cyan">Голубой</option>
+                <option value="orange">Оранжевый</option>
+                <option value="pink">Розовый</option>
+            </select>
+            <div class="form__buttons">
+                <button type="submit" id="btnSubmit">Создать</button>
+            </div>
+
+        </form>
+    </div>
+    <script type="module" src="./src/index.js"></script>
+</body>
+
+</html>
